@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Wedding Invitation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+        integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- music -->
+    <audio src="assets/music/wedding-music.m4a" loop class="music"></audio>
+
+    <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()">
+        <img src="./assets/img/12.jpg" alt="heading-img" class="heading-img position-absolute shadow-lg p-3 ">
+        <h1 class="heading-door left huruf-sambung ">Shirogane</h1>
+        <h1 class="heading-door center huruf-sambung door">❤️</h1>
+        <h1 class="heading-door right huruf-sambung">Kaguya</h1>
+        <div class="position-absolute gate">
+            <img src="assets/img/Japanese Gate.png" alt="gate">
+        </div>
+        <div class="flower-img">
+            <img src="assets/Cherry Blossom.png" alt="flower-img">
+        </div>
+    </div>
+
+    <!-- content section -->
+    <div id="content-section">
+        <!-- navbar -->
+        <ul class="nav">
+            <span class="nav-music"></span>
+            <li>
+                <a href="#acara-section">
+                    <i class="fas fa-fw fa-calendar-day"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#lokasi-section">
+                    <i class="fas fa-fw fa-location-dot"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#love-story-section">
+                    <i class="fas fa-fw fa-heart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-item-music rotate" id="music-button" onclick="toggleMusic(event)">
+                    <i class="fas fa-fw fa-compact-disc"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#galery-section">
+                    <i class="fas fa-fw fa-image"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#gift-section">
+                    <i class="fas fa-fw fa-gift"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#rsvp-section">
+                    <i class="fas fa-fw fa-check-to-slot"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- hero section -->
+    <section id="hero-section" class="d-flex align-items-center">
+        <div class="container text-center">
+            <h4 class="my-2 text-white">Kepada <span id="nama-sambutan"></span></h4>
+            <h1 class="my-2 text-white huruf-sambung">Kayuga & Shirogane</h1>
+            <h4 class="my-2 text-white">Akan Segera melangsungkan pernikahan pada tanggal</h4>
+            <h4 class="my-2 text-white fw-bold">Sabtu, 10 September 2025</h4>
+            <div class="row my-3 d-flex justify-content-center" id="countdown-wedding"></div>
+            <a href="#pembuka-section" class="rounded-pill btn btn-lg btn-get-started py-3">
+                <i class="fas fa-fw fa-envelope"></i> Buka Undangan
+            </a>
+        </div>
+    </section>
+
+    <!-- pembuka section -->
+    <section id="pembuka-section" class="pembuka-section section-bg py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h1 class="text-red huruf-sambung fw-bold">Salam Sejahtera Bagi Kita Semua</h1>
+                        <h3> Dalam Nama Tuhan Yesus </h3>
+                        <p> “Dan rendahkanlah dirimu seorang kepada yang lain di dalam takut akan
+                            Kristus. Hai istri, tunduklah kepada suamimu seperti kepada Tuhan, karena suami adalah
+                            kepala istri sama seperti Kristus adalah kepala jemaat. Dialah yang menyelamatkan tubuh.
+                        </p>
+                        <p>Efesus 5:21-25</p>
+                    </div>
+
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                            <img src="assets/img/9.jpg" alt="wedding" class="img-fluid rounded-pill">
+                        </div>
+                    </div>
+
+                    <div class="row my-3 justify-content-between">
+                        <div class="col rounded" data-aos="fade-right" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                            <div class="p-2 pt-3 text-center">
+                                <h1 class="text-center huruf-sambung">Kaguya Shinomiya</h1>
+                                <p> Kaguya is a beautiful, fair-skinned young girl with long black hair that is
+                                    usually tied by a black-red ribbon.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                            <h1 class="text-center huruf-sambung">&</h1>
+                        </div>
+                        <div class="col rounded" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="p-2 pt-3 text-center">
+                                <h1 class="text-center huruf-sambung">Miyuki Shirogane</h1>
+                                <p> Miyuki is a handsome young man with blonde hair, dark blue sanpaku eyes with
+                                    long eyelashes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- acara section -->
+    <section id="acara-section" class="acara-section py-5 mb-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h1 class="text-redborder-red huruf-sambung fw-bold">Acara Pernikahan</h1>
+                        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak/Ibu/Saudara/i
+                            berkenan hadir untuk memberikan do'a restunya, kami ucapkan terima kasih.</p>
+                    </div>
+                    <div class="row justify-content-between px-3 text-center">
+                        <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right"
+                            data-aos-easing="linear" data-aos-duration="1500">
+                            <h4>Akad nikah</h4>
+                            <hr>
+                            <p><i class="fas fa-fw fa-calendar-day"></i>Sabtu, 10 September 2025</p>
+                            <p><i class="fas fa-fw fa-clock"></i>09:00 WIB - 12:00 WIB</p>
+                            <p><i class="fas fa-fw fa-location-dot"></i>Lokasi di Semarang</p>
+                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&details=Akad+Nikah+Kaguya+Shirogane&location=Salah+satu+hotel+di+Semarang&dates=20250910T020000Z%2F20250910T050000Z"
+                                class="btn btn-lg btn-red rounded-pill" target="_blank">
+                                <i class="fas fa-fw fa-calendar-day my-3"></i> Simpan ke Kalender
+                            </a>
+                        </div>
+                        <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-left"
+                            data-aos-easing="linear" data-aos-duration="1500">
+                            <h4>Resepsi</h4>
+                            <hr>
+                            <p><i class="fas fa-fw fa-calendar-day"></i>Sabtu, 10 September 2025</p>
+                            <p><i class="fas fa-fw fa-clock"></i>09:00 WIB - 12:00 WIB</p>
+                            <p><i class="fas fa-fw fa-location-dot"></i>Lokasi di Semarang</p>
+                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&details=Akad+Nikah+Kaguya+Shirogane&location=Salah+satu+hotel+di+Semarang&dates=20250910T020000Z%2F20250910T050000Z"
+                                class="btn btn-lg btn-red rounded-pill" target="_blank">
+                                <i class="fas fa-fw fa-calendar-day my-3"></i> Simpan ke Kalender
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lokasi section -->
+    <section id="lokasi-section" class="lokasi-section py-5 section-bg mb-5">
+        <div class="container" ata-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <div class="text-pink huruf-sambung fw-bold">Lokasi Akad & Resepsi Pernikahan</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <a href="https://maps.app.goo.gl/HLB1haDboPVk9H7H8" target="_blank"
+                                class="btn btn-lg btn-red">
+                                <i>Buka di Google Maps</i>
+                            </a>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49334.52413842592!2d110.2664982!3d-7.0137751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b6bd909b00b%3A0xc01faedea75a6dfc!2sHKITA%20HOTEL%20SEMARANG!5e1!3m2!1sid!2sid!4v1753862992885!5m2!1sid!2sid"
+                                width="100%" height="450" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="my-4 mb-lg-0 border-red"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- love story section-->
+    <section id="love-story-section" class="love-story-section py-5">
+        <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="section-title">
+                <h1 class="text-red huruf-sambung fw-bold">Love Story</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg">
+                    <ul class="timeline">
+                        <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/1.webp);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Pertemuan Pertama Kaguya $ Shirogane</h3>
+                                    <span class="timeline-date">15 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/3.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Pertemuan Kedua Kaguya $ Shirogane</h3>
+                                    <span class="timeline-date">16 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right data-aos-easing=" linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/11.webp);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Pertemuan Ketiga Kaguya $ Shirogane</h3>
+                                    <span class="timeline-date">17 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/11.webp);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Pertemuan Keempat Kaguya $ Shirogane</h3>
+                                    <span class="timeline-date">18 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/14.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Pertemuan Bersama</h3>
+                                    <span class="timeline-date">19 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/16.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Lamaran</h3>
+                                    <span class="timeline-date">20 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image: url(assets/img/11.webp);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Pernikahan Bahagia</h3>
+                                    <span class="timeline-date">21 Mei 2007</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reiciendis
+                                        perspiciatis delectus tempora corrupti ipsa eos consequatur omnis optio amet
+                                        fugiat ad quasi doloremque temporibus ipsum obcaecati, cum maiores eaque,
+                                        voluptates dolorum sequi eligendi accusantium? Provident expedita vitae aut
+                                        sapiente sint facilis ab error officia. </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery section -->
+    <section id="galery-section" class="galery-section py-5 section-bg mb-5">
+        <div class="container" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="section-title">
+                <h1 class="huruf-sambung text-red fw-bold">Gallery</h1>
+            </div>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/1.webp" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/1.webp" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/2.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/2.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/3.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/3.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/4.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/4.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/5.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/2.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/6.webp" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/6.webp" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/7.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/7.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/8.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/8.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/9.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/9.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/10.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/10.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/11.webp" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/11.webp" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/12.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/12.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/13.webp" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/13.webp" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/14.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/14.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/15.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/15.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="assets/img/16.jpg" data-lightbox="kaguyaShirogane" class="text-decoration-none">
+                        <img src="assets/img/16.jpg" alt="Kaguya & Shiroganes" class="card-img border-red">
+                    </a>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <iframe width="100%" height="500" class="border-red"
+                        src="https://www.youtube.com/embed/eqjFmsZGBSc?si=sye0v7uXrdjkRyG5" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gift section -->
+    <section id="gift-section" class="gift-section py-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h1 class="huruf-sambung text-red fw-bold">Wedding Gift</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis fugit blanditiis quasi,
+                            quia
+                            voluptatem perspiciatis fugiat vero magni provident?</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="text-center btn btn-lg btn-red mb-4 rounded-pill"
+                                data-bs-toggle="collapse" data-bs-target="#collapseHadiah">
+                                <i class="fas fa-fw fa-gift"></i> Kirim Hadiah
+                            </button>
+                            <div class="collapse" id="collapseHadiah">
+
+                                <!-- Bank BCA -->
+                                <div class="my-4 mx-auto position-relative credit-card">
+                                    <img src="assets/img/Gift/Logo Bank BCA.png" alt="Logo BCA" class="card-logo">
+                                    <div class="card-container">
+                                        <img src="assets/img/Gift/sim.png" alt="sim" class="card-sim">
+                                        <div class="card-number">1234 4312 123</div>
+                                    </div>
+                                    <div class="card-name mt-2">Mikhael Surya</div>
+                                    <a style="cursor: pointer;" onclick="copyText(this)"
+                                        class="copy-button btn btn-light mt-3">
+                                        <i class="fas fa-fw fa-copy"></i>
+                                        Copy
+                                    </a>
+                                </div>
+
+                                <!-- Bank BRI -->
+                                <div class="my-4 mx-auto position-relative credit-card">
+                                    <img src="assets/img/Gift/Logo Bank Mandiri.png" alt="Logo BNI" class="card-logo">
+                                    <div class="card-container">
+                                        <img src="assets/img/Gift/sim.png" alt="sim" class="card-sim">
+                                        <div class="card-number">1234 4312 123</div>
+                                    </div>
+                                    <div class="card-name mt-2">Mikhael Surya</div>
+                                    <a style="cursor: pointer;" onclick="copyText(this)"
+                                        class="copy-button btn btn-light mt-3">
+                                        <i class="fas fa-fw fa-copy"></i>
+                                        Copy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp-section" class="rsvp-section section-bg py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <div class="text-red huruf-sambung fw-bold">RSVP</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, odit.</p>
+                    </div>
+                    <form
+                        action="https://script.google.com/macros/s/AKfycbxB2KbflvM7BdXTtWiMUHhKnmDVHnK3ZOqzk74cHFa0Y8VWc8UL3IVQTfBdxailB7h65w/exec"
+                        method="post" id="rsvp-form"
+                        class="row row-cols-md-auto g-3 align-items-center justify-content-center    ">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="nama">Nama</label>
+                                <input type="text" name="nama" id="nama" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="jumlah">Jumlah</label>
+                                <input type="number" name="jumlah" id="jumlah" class="form-control" required min="1"
+                                    max="5" length="1" value="1">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="status">Status</label>
+                                <select name="status" id="status" class="form-select" required>
+                                    <option value="0">--- Pilih salah satu ---</option>
+                                    <option value="Hadir">Hadir</option>
+                                    <option value="Tidak Hadir">Tidak Hadir</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="mt-3">
+                                <button type="submit" class="btn btn-kirim">
+                                    <i class="fas fa-fw fa-paper-plane"></i>
+                                    Kirim
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row mt-5">
+                        <div class="col-lg-12">
+                            <div id="disqus_thread"></div>
+                            <script>
+                                /**
+                                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                                /*
+                                var disqus_config = function () {
+                                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                };
+                                */
+                                (function () { // DON'T EDIT BELOW THIS LINE
+                                    var d = document, s = d.createElement('script');
+                                    s.src = 'https://wedding-kaguya-shirogane.disqus.com/embed.js';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a
+                                    href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penutup section -->
+    <section id="penutup-section" class="penutup-section">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h1 class="text-red huruf-sambung fw-bold">Terimakasih & Tuhan Memberkati</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum velit architecto adipisci
+                            consectetur autem corrupti, blanditiis odio corporis fugiat repellat.</p>
+                        <h5 class="my-3">KAMI YANG BERBAHAGIA</h5>
+                        <h1 class="huruf-sambung ">Kaguya & Shirogane</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="mb-5 pb-5">
+        <div class="container py-5 text-center position-relative">
+            <div class="row" >
+                <div class="col-12 my-3">
+                    <a href="https://www.tiktok.com/search?q=baptis_trangkil" target="_blank"
+                        class="text-decoration-none text-red fw-bold">&copy;2025. Made with ❤️ by Mikhael Surya</a>
+                </div>
+                <div class="col-12 my-3">
+                    <a href="#" class="text-red"><i class="fas fa-fw fa-arrow-up"></i> Back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Lightbox 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
+        integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+    <!-- javascript -->
+    <script src="assets/js/script.js"></script>
+    <script id="dsq-count-scr" src="//wedding-kaguya-shirogane.disqus.com/count.js" async></script>
+</body>
+
+</html>
