@@ -81,7 +81,6 @@ body {
     
 }
 
-
 .heading-door{
     position: absolute;
     text-align: center;
@@ -601,21 +600,21 @@ body {
 }
 
 @media (max-width: 768px) {
-  #hero-section h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-
   .heading-img {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 700px;
+  }
+
+  .gate{
+    margin: 220px 0px 0 0;
+  }
+
+  .gate img{
+    width: 400px;
   }
 
   .flower-img img {
-    width: 250px;
-    margin-right: 0;
-    margin-top: 100px;
-    transform: rotate(-20deg);
+    display: none;
   }
 
   .card-acara {
@@ -637,15 +636,49 @@ body {
   }
 
   .heading-door {
-    font-size: 28px;
-    width: 90%;
+    top: 5rem;
+    bottom: auto;
+    font-size: 50px; 
   }
 
-  .heading-door.left,
-  .heading-door.right {
-    margin: 0;
+  #hero-section h1 {
+    font-size: 45px;
+  }
+
+  .nav li a.nav-item-music {
+    font-size: 40px;
+    top: -25px;
+  }
+
+  .nav .nav-music{
+    top: -15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .heading-door.left {
+    margin: 150px 0 0 0;
     text-align: center;
   }
+
+  .heading-door.right {
+    margin: 350px 0 0 0;
+    text-align: center;
+  }
+
+  .heading-door.center {
+    margin: 250px 0 0 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  @keyframes slideUp {
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
 
   .card-logo {
     width: 50px;
